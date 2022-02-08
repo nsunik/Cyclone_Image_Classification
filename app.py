@@ -6,7 +6,7 @@ import numpy as np
 
 st.set_page_config(layout="wide", page_title="Satellite Image Classification", page_icon="")
 
-st.title("Satellite Image Classification[Tensorflow]")
+st.title("Satellite Image Classification")
 c1, c2 = st.columns(2)
 with c1:
     uploaded_file = st.file_uploader("Please Upload Images ", accept_multiple_files=False)
