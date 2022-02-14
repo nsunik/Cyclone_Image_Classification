@@ -18,10 +18,10 @@ with c1:
             with st.spinner('Loading Result...'):
                 time.sleep(2)
                 st.markdown("This Image most likely belongs to")
-               # st.subheader(
-                #    " {} with a {:.2f} percent confidence."
-                 #       .format(class_names[np.argmax(results)], 100 * np.max(results)))
-                st.write(results)
+                st.subheader(
+                    " {} with a {:.2f} percent confidence."
+                        .format(class_names[np.argmax(results)], 100 * np.max(results)))
+                #st.write(results)
         
 
 if uploaded_file is None:
