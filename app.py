@@ -4,7 +4,7 @@ import time
 from PIL import Image
 import numpy as np
 
-st.set_page_config(layout="wide", page_title="Cyclone Patterns & Classification Classification", page_icon="")
+st.set_page_config(layout="wide", page_title="Cyclone Patterns & Classification", page_icon="")
 
 st.title("Cyclone Image Classification")
 c1, c2 = st.columns(2)
