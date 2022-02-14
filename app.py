@@ -14,6 +14,7 @@ with c1:
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         if st.button('   Submit  '):
+            
             results = classify.predict(image)
             with st.spinner('Loading Result...'):
                 time.sleep(2)
@@ -21,7 +22,8 @@ with c1:
                 st.subheader(
                     " {} with a {:.2f} percent confidence."
                         .format(class_names[np.argmax(results)],np.max(results)))
-                #st.write(results)#100 * ,np.max(results)
+                #st.write(results)#100 * ,np.max(results),
+                predictions=np.argmax(predictions,axis=1)
         
 
 if uploaded_file is None:
