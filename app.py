@@ -10,7 +10,7 @@ st.title("Cyclone Image Classification")
 c1, c2 = st.columns(2)
 with c1:
     uploaded_file = st.file_uploader("Please Upload Images ", accept_multiple_files=False)
-    class_names = ['Severe Tropical Storm_SS', 'Tropical Depression_D', 'Tropical Strom_S', 'Typhoon_T']
+    class_names = ['Severe Tropical Storm', 'Tropical Depression', 'Tropical Strom', 'Typhoon']
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         if st.button('   Submit  '):
