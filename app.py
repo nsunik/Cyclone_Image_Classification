@@ -23,7 +23,7 @@ with c1:
                     " {} with a {:.2f} percent confidence."
                         .format(class_names[np.argmax(results)],np.max(results)))
                 st.write(results)#100 * ,np.max(results),
-               predictions=np.argmax(predictions,axis=1)
+                predictions=np.argmax(predictions,axis=1)
         
 
 if uploaded_file is None:
