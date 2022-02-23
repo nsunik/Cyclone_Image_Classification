@@ -21,9 +21,9 @@ with c1:
                 st.markdown("This Image most likely belongs to")
                 st.subheader(
                     " {} with a {:.2f} percent confidence."
-                        .format(class_names[np.argmax(results)],np.max(results)))
-                st.write(results)#100 * ,np.max(results),
-                predictions=np.argmax(predictions,axis=1)
+                        .format(class_names[np.argmax(results)], 100 * np.max(results)))
+                st.write(results)
+               
         
 
 if uploaded_file is None:
