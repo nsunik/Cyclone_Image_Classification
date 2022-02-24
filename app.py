@@ -19,7 +19,8 @@ with c1:
             with st.spinner('Loading Result...'):
                 time.sleep(2)
                 st.markdown("This Image most likely belongs to")
-                st.subheader(
+                
+                #st.subheader(
                    " {} with a {:.2f} percent confidence."
                        .format(class_names[np.argmax(results)],np.max(results)))
                 st.write(results)
