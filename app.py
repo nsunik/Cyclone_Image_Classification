@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Cyclone Patterns & Classification"
 st.title("Cyclone Image Classification")
 c1, c2 = st.columns(2)
 with c1:
-    uploaded_file = st.file_uploader("Please Upload Images ", accept_multiple_files=False)
+    uploaded_file = st.file_uploader("Please Upload Image ", accept_multiple_files=False)
     class_names = ['Severe Tropical Storm', 'Tropical Depression', 'Tropical Storm', 'Typhoon']
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
