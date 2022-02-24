@@ -19,11 +19,12 @@ with c1:
             with st.spinner('Loading Result...'):
                 time.sleep(2)
                 st.markdown("This Image most likely belongs to")
+                st.subheader(
+                    " {} with a percent confidence."
+                        .format(class_names[np.argmax(results)],np.max(results)))
+                #st.write(results), 100 * np.max(results)
                 
-                #st.subheader(
-                   #" "
-                      .format(class_names[np.argmax(results)],np.max(results)))
-                #st.write(results)
+             
                
         
 
