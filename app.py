@@ -29,7 +29,7 @@ with c1:
         
 
 if uploaded_file is None:
-    st.header("Please Upload Images")
+    st.header("Please Upload Image")
 with c2:
     if uploaded_file is not None:
         st.image(uploaded_file)
